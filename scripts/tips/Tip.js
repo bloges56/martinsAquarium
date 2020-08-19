@@ -1,7 +1,7 @@
-tipList = [
-    "Tip",
-    "Tip",
-    "Tip",
-    "Tip",
-    "Tip"
-];
+export const Tip = (tip) => {
+    return `
+    <div class="tip">
+        ${tip}
+    </div>
+    `
+}
