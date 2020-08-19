@@ -9,11 +9,11 @@ export const FishList = () => {
 
     // Get a reference to the `<article class="content">` element
     const contentElement = document.getElementById("cards_tips");
-    const fishes = useFish();
+    const allFish = useFish();
 
     // Generate all of the HTML for all of the fish
     let fishHTMLRepresentations = "";
-    for (const fish of fishes) {
+    for (const fish of allFish) {
         fishHTMLRepresentations += Fish(fish);
     }
 
