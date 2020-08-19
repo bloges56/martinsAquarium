@@ -13,13 +13,6 @@ export const TipList = () =>
         tipHTMLRepresentations += Tip(tip);
     }
 
-    /*
-    var tipListHTML = document.createElement("aside");
-    tipListHTML.id = "tips_list";
-    tipListHTML.innerHTML = tipHTMLRepresentations;
-
-    contentElement.appendChild(tipListHTML);
-    */
    contentElement.innerHTML += `
         <aside id="tips_list">
             ${tipHTMLRepresentations}
