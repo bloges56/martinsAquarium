@@ -18,7 +18,7 @@ main {
 #fish_list{
     flex-basis:80%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .fish_card{
@@ -26,7 +26,7 @@ main {
     box-sizing: border-box;
     width: 30%;
     min-width: 200px;
-    margin: 1em;
+    margin: 0em;
     padding: 0.5em 0.5em;
 }
 
@@ -36,3 +36,9 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
+.fish_list_section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
