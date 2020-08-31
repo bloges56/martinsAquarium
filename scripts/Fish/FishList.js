@@ -18,23 +18,23 @@ export const FishList = () => {
     var holyFishHTML = document.createElement('div');
     holyFishHTML.id = "holy_fish";
     holyFishHTML.classList.add("fish_list_section");
-    for (const fish of holyFish) {
+    holyFish.map(fish => {
         holyFishHTML.innerHTML += Fish(fish);
-    }
+    })
 
     var soldierFishHTML = document.createElement('div');
     soldierFishHTML.id = "soldier_fish";
     soldierFishHTML.classList.add("fish_list_section");
-    for (const fish of swordFish) {
+    swordFish.map(fish => {
         soldierFishHTML.innerHTML += Fish(fish);
-    }
+    })
 
     var normalFishHTML = document.createElement('div');
     normalFishHTML.id = "normal_fish";
     normalFishHTML.classList.add("fish_list_section");
-    for (const fish of normalFish) {
+    normalFish.map(fish => {
         normalFishHTML.innerHTML += Fish(fish);
-    }
+    })
 
 
 

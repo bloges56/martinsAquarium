@@ -9,9 +9,9 @@ export const TipList = () =>
     let tipHTMLRepresentations = `
     <h3>Tips</h3>
     `;
-    for (const tip of tips){
+    tips.map(tip => {
         tipHTMLRepresentations += Tip(tip);
-    }
+    })
 
    contentElement.innerHTML += `
         <aside id="tips_list">
