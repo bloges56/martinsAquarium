@@ -7,9 +7,9 @@ export const LocList = () => {
 
     var placesList = document.createElement("ul");
     placesList.id = "places_list";
-    for (const loc of allLocs){
-        placesList.innerHTML += Location(loc);
-    }
+    allLocs.map(location => {
+        placesList.innerHTML += Location(location);
+    })
 
     contentElement.innerHTML += `
         <h3>Places</h3>
